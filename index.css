@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(246, 248, 250);
+}
+ .main{
+    font-weight: bolder;
+}
+.main2{
+    height: 20px;
+    width: 250px;
+}
+ table{
+    width: 100%;
+}
+th,td{
+    text-align: center;
+}
+div{
+    margin-left: 35%;
+}
+button{
+    text-align: center;
+    justify-content: center;
+}
