@@ -21,3 +21,10 @@ button{
     text-align: center;
     justify-content: center;
 }
+.heading{
+    background-color: rgb(29, 28, 28);
+    color: white;
+}
+.info{
+    background-color: lightgrey;
+}
