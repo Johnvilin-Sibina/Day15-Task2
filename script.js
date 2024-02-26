@@ -104,8 +104,9 @@ function create_th(tagname, content) {
     return th;
 }
 
-function create_td(tagname, content) {
+function create_td(tagname,attrname, attrvalue,content) {
     var td = document.createElement(tagname);
+    td.setAttribute(attrname,attrvalue);
     td.innerHTML = content;
     return td;
 }
@@ -137,6 +138,7 @@ function display_data() {
 
     var table = document.createElement("table");
     var thead = document.createElement("thead");
+    thead.className = "heading";
     var th1 = create_th("th","First Name");
     var th2 = create_th("th","Last Name");
     var th3 = create_th("th","Address");
@@ -148,14 +150,14 @@ function display_data() {
 
     var tbody = document.createElement("tbody");
     var tr = document.createElement("tr");
-    var td1 = create_td("td", td1_data)
-    var td2 = create_td("td", td2_data)
-    var td3 = create_td("td", td3_data)
-    var td4 = create_td("td", td4_data)
-    var td5 = create_td("td", td5_data)
-    var td6 = create_td("td", td6_data)
-    var td7 = create_td("td", td7_data)
-    var td8 = create_td("td", td8_data)
+    var td1 = create_td("td","class","info", td1_data)
+    var td2 = create_td("td","class","info", td2_data)
+    var td3 = create_td("td","class","info", td3_data)
+    var td4 = create_td("td","class","info", td4_data)
+    var td5 = create_td("td","class","info", td5_data)
+    var td6 = create_td("td","class","info", td6_data)
+    var td7 = create_td("td","class","info", td7_data)
+    var td8 = create_td("td","class","info", td8_data)
     
     thead.append(th1, th2, th3, th4, th5, th6, th7, th8)
     tr.append(td1, td2, td3, td4, td5, td6, td7, td8)
